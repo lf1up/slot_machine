@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "types": [
+      "mocha",
+      "chai"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "lib": [
+      "es2015"
+    ],
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "allowJs": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "tests/**/*.ts",
+    ".next/types/**/*.ts"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
